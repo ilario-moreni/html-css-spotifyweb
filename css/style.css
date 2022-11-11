@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+    width: 200px;
+}
+
+.main-row{
+    display: flex;
+    width: 100%;
+}
+
+.top-bar{
+    background-color: blue;
+    min-height: 50px;
+}
+
+main{
+    background-color: green;
+    height: calc(100vh - 100px);
+}
+
+.main-col{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 200px);
+}
+
+footer{
+    background-color: purple;
+    height: 50px;
+}
