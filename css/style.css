@@ -7,11 +7,9 @@
     font-weight: 600;
 }
 
-/* commons */
+                                                /* commons */
 
-.cursor-pointer{
-    cursor: pointer;
-}
+/* main-structure */
 
 #main-row{
     display: flex;
@@ -23,6 +21,15 @@
     flex-direction: column;
     width: calc(100% - 200px);
 }
+
+/* reusable classes */
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+/* common styling */
 
 a{
     color:inherit;
@@ -37,9 +44,8 @@ h2, h3, h4{
     color:white;
 }
 
-/* nav (left-side-bar) */
+                                                /* nav (left-side-bar) */
 
-/* menu and playlist */
 nav{
     background-color: black;
     width: 200px;
@@ -50,6 +56,8 @@ nav{
     color:#5F5F5F;
     height: calc(100vh - 50px);
 }
+
+/* menu and playlist */
 
 .logo-container{
     width: 80%;
@@ -71,9 +79,6 @@ nav{
     padding-top: 15px;
 }
 
-.playlist-li{
-    margin-bottom: 15px;
-}
 .plus-icon{
     background-color: #A3A3A3;
     color:black;
@@ -81,6 +86,11 @@ nav{
     padding: 8px;
     margin: 10px  10px 0 0;
 }
+
+.playlist-li{
+    margin-bottom: 15px;
+}
+
 
 
 /* download and profile */
@@ -108,7 +118,7 @@ nav{
     color: white;
 }
 
-/* div .top-bar */
+                                                /* div .top-bar */
 
 .top-bar{
     background-color: #080B12;
@@ -127,7 +137,7 @@ nav{
 }
 
 
-/* main */
+                                                /* main */
 
 main{
     background-color: #141922;
@@ -137,7 +147,7 @@ main{
 
 
 
-/* footer */
+                                                /* footer */
 
 footer{
     background-color: #282828;
@@ -151,9 +161,16 @@ footer{
     display: flex;
 }
 
+/* footer left col */
+
 .footer-col-left{
     padding: 20px 0;
     align-items: center;
+}
+
+.footer-song-img{
+    width: 40px;
+    margin-right: 10px;
 }
 
 .footer-song-info{
@@ -165,10 +182,6 @@ footer .album-title{
     color:white;
 }
 
-.footer-song-img{
-    width: 40px;
-    margin-right: 10px;
-}
 
 .footer-col-left .icons-container{
     margin: auto 0;
