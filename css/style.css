@@ -3,7 +3,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
     font-weight: 600;
 }
 
@@ -54,7 +53,8 @@ nav{
     padding:20px 20px 10px;
     justify-content: space-between;
     color:#5F5F5F;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
+    font-size: 12px;
 }
 
 /* menu and playlist */
@@ -153,6 +153,7 @@ footer{
     background-color: #282828;
     display: flex;
     justify-content: space-between;
+    font-size: 10px;
     padding: 10px;
     color: #838383;
 }
@@ -164,7 +165,7 @@ footer{
 /* footer left col */
 
 .footer-col-left{
-    padding: 20px 0;
+    padding: 10px;
     align-items: center;
 }
 
@@ -193,3 +194,65 @@ footer .album-title{
     font-size: 16px;
     vertical-align: middle;
 }
+
+/* footer central col */
+
+.footer-col-central{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+/* player controls */
+
+.player-controls{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    min-width: 100px;
+    margin: 10px auto;
+    color: white;
+}
+
+.player-control-icon::before{
+    font-size: 12px;
+    height: 15px;
+    width: 15px;
+}
+
+.play-icon{
+    transform: scale(2);
+}
+
+
+/* range bar */
+
+.range-bar-container{
+    color:white;
+    width: 100%;
+}
+
+
+.range-bar{
+    width: calc(100% - 80px);
+    height: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #5A5A5A;
+    border-radius: 100px;
+    margin: 0 15px;
+}
+
+.filler-range-bar{
+    height: 100%;
+    background-color: #C1C1C1;
+    border-radius: 100px;
+    width: 100%;
+    transition: 2s width;
+}
+
+.filler-range-bar:hover{
+    width: 0%;
+}
+
+
