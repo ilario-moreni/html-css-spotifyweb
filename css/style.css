@@ -107,9 +107,19 @@ nav{
 
 .top-bar{
     background-color: #080B12;
-    min-height: 50px;
+    padding: 10px 10px 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.upgrade-button{
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid white;
+    padding: 0.8rem 2.5rem;
+    color:white;
+    text-transform: uppercase;
+}
 
 
 /* main */
