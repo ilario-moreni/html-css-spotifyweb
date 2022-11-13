@@ -39,7 +39,7 @@ ul{
     list-style-type: none;
 }
 
-h2, h3, h4{
+h2, h3, h4, .white{
     color:white;
 }
 
@@ -162,6 +162,11 @@ footer{
     display: flex;
 }
 
+.footer-col-left, .footer-col-right{
+    width:30%;
+}
+
+
 /* footer left col */
 
 .footer-col-left{
@@ -176,7 +181,7 @@ footer{
 
 .footer-song-info{
     line-height: 14px;
-    margin-right: 3rem;
+    margin-right: 2.2rem;
 }
 
 footer .album-title{
@@ -211,7 +216,7 @@ footer .album-title{
     width: 150px;
     min-width: 100px;
     margin: 10px auto;
-    color: white;
+    color: #EFEFEF;
 }
 
 .player-control-icon::before{
@@ -228,13 +233,15 @@ footer .album-title{
 /* range bar */
 
 .range-bar-container{
-    color:white;
+    color:#EFEFEF;
     width: 100%;
 }
 
+.track-range-bar{
+    width: calc(100% - 100px);
+}
 
 .range-bar{
-    width: calc(100% - 100px);
     height: 4px;
     display: inline-block;
     vertical-align: middle;
@@ -255,4 +262,22 @@ footer .album-title{
     width: 0%;
 }
 
+/* footer right col */
+
+.footer-col-right{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.setting-icon::before{
+    color:#EFEFEF;
+    font-size: 12px;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.volume-range-bar{
+    width: 100px;
+}
 
