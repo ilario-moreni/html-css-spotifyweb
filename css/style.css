@@ -144,6 +144,35 @@ main{
     height: 100%;
 }
 
+/* explore section (top list) */
+
+.explore-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #838383;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.explore-li{
+    margin-right:10px;
+    cursor: pointer;
+    padding: 0 10px 5px;
+    margin-bottom: 2px;
+}
+
+.explore-li:hover .green-partial-border{
+    border-top: 2px solid greenyellow;
+    margin: 0 auto;
+    width: 30px;
+}
+
+.explore-li:hover{
+    margin-bottom: 0px;
+}
 
 
 
