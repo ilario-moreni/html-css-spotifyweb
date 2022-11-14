@@ -207,6 +207,7 @@ main{
 
 .explore-li:hover{
     margin-bottom: 0px;
+    color:white;
 }
 
 /* recently played section */
@@ -219,6 +220,7 @@ main{
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -392,3 +394,34 @@ footer .album-title{
     width: 100px;
 }
 
+                                                /* responsive */
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+    /* main */
+
+    .recently-played-container{
+        justify-content: flex-start;
+        gap: 1%;
+    }
+
+    .card{
+        width: calc((100% / 4) - 1%);
+        max-width:none;
+    }
+}
+
+/* mobile (xs) */
+
+@media screen and (max-width: 576px){
+    .card{
+        width: calc((100% / 2) - 1%);
+    }
+}
+
+/* mobile (xxs) */
+
+@media screen and (max-width: 490px){
+    
+}
