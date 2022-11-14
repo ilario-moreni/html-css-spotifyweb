@@ -427,11 +427,6 @@ footer .album-title{
 
 @media screen and (max-width: 768px){
 
-    /* main structure */
-
-    #main-col{
-        width: calc(100% - 50px);
-    }
 
     /* main */
 
@@ -441,6 +436,12 @@ footer .album-title{
 }
 
 @media screen and (max-width: 576px){
+        /* main structure */
+
+        #main-col{
+            width: calc(100% - 50px);
+        }
+
         /* nav */
 
         nav{
