@@ -27,6 +27,10 @@
     cursor: pointer;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
 
 /* common styling */
 
@@ -41,6 +45,10 @@ ul{
 
 h2, h3, h4, .white{
     color:white;
+}
+
+h2{
+    font-size: 20px;
 }
 
                                                 /* nav (left-side-bar) */
@@ -142,6 +150,8 @@ nav{
 main{
     background-color: #141922;
     height: 100%;
+    color: #838383;
+    overflow-y: auto;
 }
 
 /* explore section (top list) */
@@ -150,7 +160,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #838383;
     text-transform: uppercase;
     margin: 0 auto;
     font-size: 12px;
@@ -172,6 +181,37 @@ main{
 
 .explore-li:hover{
     margin-bottom: 0px;
+}
+
+/* recently played section */
+
+.recently-played-section{
+    padding: 20px;
+}
+
+.recently-played-container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 160px;
+    max-width: calc((100% / 6) - 1%);
+}
+
+.card img{
+    width: 100%;
+}
+
+.title{
+    color:white;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.subtitle{
+    font-size: 10px;
 }
 
 
