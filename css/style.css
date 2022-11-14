@@ -65,6 +65,7 @@ nav{
     height: 100%;
 }
 
+/* scrollbar */
 .scrollbar-nav{
     height: 100%;
     overflow-y: scroll;
@@ -72,6 +73,24 @@ nav{
     flex-direction: column;
     justify-content: space-between;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 20px;
+  }
+  
+  /* hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5F5F5F; 
+  }
+
 
 /* menu and playlist */
 
@@ -90,8 +109,7 @@ nav{
 .top-nav-li{
     margin-bottom: 10px;
 }
-
-.nav-playlist-container{
+h4{
     padding-top: 15px;
 }
 
@@ -241,6 +259,7 @@ main{
                                                 /* footer */
 
 footer{
+    height:80px;
     background-color: #282828;
     display: flex;
     justify-content: space-between;
