@@ -152,6 +152,7 @@ main{
     height: 100%;
     color: #838383;
     overflow-y: auto;
+    padding:15px;
 }
 
 /* explore section (top list) */
@@ -163,7 +164,6 @@ main{
     text-transform: uppercase;
     margin: 0 auto;
     font-size: 12px;
-    margin-top: 15px;
 }
 
 .explore-li{
@@ -186,7 +186,7 @@ main{
 /* recently played section */
 
 .recently-played-section{
-    padding: 20px;
+    padding: 20px 0px 10px;
 }
 
 .recently-played-container{
@@ -214,7 +214,13 @@ main{
     font-size: 10px;
 }
 
+/* my mix section */
 
+.my-mix-container{
+    padding: 20px 0;
+    display: flex;
+    gap: 1%;
+}
 
                                                 /* footer */
 
