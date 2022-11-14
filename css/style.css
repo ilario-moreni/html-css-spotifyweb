@@ -409,7 +409,7 @@ footer .album-title{
 
 /* tablet */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     /* main */
 
     .recently-played-container{
@@ -425,27 +425,12 @@ footer .album-title{
 
 /* mobile (xs) */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
 
     /* main structure */
 
     #main-col{
         width: calc(100% - 50px);
-    }
-
-    /* nav */
-
-    nav{
-        width: 50px;
-        padding: 5px 10px;
-    }
-
-    .mobile-display-none{
-        display: none;
-    }
-    
-    .show-mobile-only{
-        display: inline-block;
     }
 
     /* main */
@@ -454,3 +439,20 @@ footer .album-title{
         width: calc((100% / 2) - 1%);
     }   
 }
+
+@media screen and (max-width: 576px){
+        /* nav */
+
+        nav{
+            width: 50px;
+            padding: 5px 10px;
+        }
+    
+        .mobile-display-none{
+            display: none;
+        }
+        
+        .show-mobile-only{
+            display: inline-block;
+        }
+}    
