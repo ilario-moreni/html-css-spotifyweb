@@ -357,12 +357,13 @@ footer .album-title{
 /* range bar */
 
 .range-bar-container{
+    position: relative;
     color:#EFEFEF;
     width: 100%;
 }
 
 .track-range-bar{
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
 }
 
 .range-bar{
@@ -403,6 +404,11 @@ footer .album-title{
 
 .volume-range-bar{
     width: 100px;
+}
+
+.absolute-right{
+    position: absolute;
+    right: 0;
 }
 
                                                 /* responsive */
@@ -456,4 +462,17 @@ footer .album-title{
         .show-mobile-only{
             display: inline-block;
         }
+
+        /* footer */
+
+        .footer-col-left {
+            padding: 0px;
+        }
+
+        .footer-song-info{
+            margin-right: 0;
+        }
+
+        .player-controls {
+            max-width: 120px;
 }    
