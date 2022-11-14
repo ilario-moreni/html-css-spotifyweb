@@ -13,6 +13,7 @@
 #main-row{
     display: flex;
     width: 100%;
+    height: calc(100vh - 80px);
 }
 
 #main-col{
@@ -61,7 +62,6 @@ nav{
     padding:20px 20px 10px;
     justify-content: space-between;
     color:#5F5F5F;
-    height: calc(100vh - 80px);
     font-size: 12px;
 }
 
@@ -149,9 +149,8 @@ nav{
 
 main{
     background-color: #141922;
-    height: 100%;
     color: #838383;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding:15px;
 }
 
@@ -216,11 +215,19 @@ main{
 
 /* my mix section */
 
-.my-mix-container{
+.my-mix-container, .popular-artists-container{
     padding: 20px 0;
     display: flex;
     gap: 1%;
+    margin-bottom: 10px;
 }
+
+/* popular artists section */
+
+.circle-img{
+    border-radius: 100%;
+}
+
 
                                                 /* footer */
 
