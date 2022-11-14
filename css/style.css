@@ -60,9 +60,17 @@ nav{
     display: flex;
     flex-direction: column;
     padding:20px 20px 10px;
-    justify-content: space-between;
     color:#5F5F5F;
     font-size: 12px;
+    height: 100%;
+}
+
+.scrollbar-nav{
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* menu and playlist */
@@ -94,6 +102,7 @@ nav{
     padding: 8px;
     margin: 10px  10px 0 0;
 }
+
 
 .playlist-li{
     margin-bottom: 15px;
@@ -238,6 +247,7 @@ footer{
     font-size: 10px;
     padding: 10px;
     color: #838383;
+    z-index: 2;
 }
 
 .footer-col{
