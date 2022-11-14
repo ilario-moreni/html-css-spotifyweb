@@ -24,7 +24,7 @@
 
 /* reusable classes */
 
-.cursor-pointer{
+.cursor-pointer, li, .player-control-icon, .setting-icon, .range-bar-container{
     cursor: pointer;
 }
 
@@ -99,11 +99,21 @@ nav{
     padding-bottom: 20px;
 }
 
+.show-mobile-only{
+    display: none;
+    filter: brightness(100);
+}
+
 .nav-icons{
     font-size: 24px;
     width: 27px;
     margin-right: 10px;
     vertical-align: sub;
+    text-align: center;
+}
+
+.top-nav-ul{
+    margin-left: 2px;
 }
 
 .top-nav-li{
@@ -166,8 +176,9 @@ h4{
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid white;
-    padding: 0.8rem 2.5rem;
-    color:white;
+    padding: 5px 30px;
+    color: white;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -415,13 +426,31 @@ footer .album-title{
 /* mobile (xs) */
 
 @media screen and (max-width: 576px){
+
+    /* main structure */
+
+    #main-col{
+        width: calc(100% - 50px);
+    }
+
+    /* nav */
+
+    nav{
+        width: 50px;
+        padding: 5px 10px;
+    }
+
+    .mobile-display-none{
+        display: none;
+    }
+    
+    .show-mobile-only{
+        display: inline-block;
+    }
+
+    /* main */
+
     .card{
         width: calc((100% / 2) - 1%);
-    }
-}
-
-/* mobile (xxs) */
-
-@media screen and (max-width: 490px){
-    
+    }   
 }
