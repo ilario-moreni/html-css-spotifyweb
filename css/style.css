@@ -24,7 +24,7 @@
 
 /* reusable classes */
 
-.cursor-pointer, li, .player-control-icon, .setting-icon, .range-bar-container{
+.cursor-pointer, li, .player-control-icon, .setting-icon, .range-bar-container, .download-nav, .footer-song-info{
     cursor: pointer;
 }
 
@@ -32,6 +32,12 @@
     text-align: center;
 }
 
+.center-x-y{
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 /* common styling */
 
@@ -180,6 +186,7 @@ h4{
     color: white;
     font-size: 12px;
     text-transform: uppercase;
+    margin-right: 10px;
 }
 
 
@@ -240,6 +247,7 @@ main{
 }
 
 .card img{
+    position: relative;
     width: 100%;
 }
 
@@ -411,6 +419,37 @@ footer .album-title{
     right: 0;
 }
 
+                                    /* hover */
+
+li:hover, .footer-icon:hover, .download-nav:hover{
+    color: lightgray;
+}
+
+.card img:hover{
+    filter: opacity(0.3);
+}
+
+.card-img-container{
+    position: relative;
+}
+
+.play-hover{
+    font-size: 48px;
+    color:white;
+    display: none;
+}
+
+.card-img-container:hover .play-hover{
+    display:block;
+}
+
+.upgrade-button:hover{
+    transform: scale(1.1);
+}
+
+.play-icon:hover{
+    transform: scale(2.5);
+}
                                                 /* responsive */
 
 /* tablet */
@@ -475,4 +514,6 @@ footer .album-title{
 
         .player-controls {
             max-width: 120px;
-}    
+    }
+}
+

@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <!-- cdn font-awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <!-- css' file link -->
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify</title>
@@ -66,6 +66,7 @@
                 </div>
                 <!-- main -->
                 <main>
+                    <!-- explore list -->
                     <div class="explore-container">
                         <ul class="explore-ul">
                             <li class="explore-li">in evidenza
@@ -88,63 +89,102 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- recently played (first row covers) -->
                     <section class="recently-played-section">
                         <h2>Recently played</h2>
                         <div class="recently-played-container">
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/metal_lifting.jpg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/metal_lifting.jpg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">Heavy Metal</p>
                                 <p class="subtitle">Subtitle</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/stranger.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/stranger.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</p>
                                 <p class="subtitle">Kyle Dixon &amp; Michael Stein</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/aquietplace.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/aquietplace.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">A quiet place</p>
                                 <p class="subtitle">Subtitle</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/split.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/split.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">Split</p>
                                 <p class="subtitle">Subtitle</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/cure.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/cure.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">A cure for wellness</p>
                                 <p class="subtitle">Subtitle</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/sinister.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/sinister.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
                                 <p class="title">Sinister</p>
                                 <p class="subtitle">Subtitle</p>
                             </div>
                         </div>
                     </section>
+                    <!-- my mix section (second row covers) -->
                     <section class="my-mix-section">
                         <h2>Creato per John Doe</h2>
                         <p class="subtitle">Più ascolti, più saranno accurati i suggerimenti.</p>
                         <div class="my-mix-container">
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/radar.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/radar.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
+                                
                                 <p class="title">Release Radar</p>
                             </div>
+                            <!-- card -->
                             <div class="card text-align-center">
-                                <img src="./img/mixdaily.jpeg" alt="song cover">
+                                <div class="card-img-container">
+                                    <img src="./img/mixdaily.jpeg" alt="song cover">
+                                    <i class="fa-regular fa-circle-play play-hover center-x-y"></i>
+                                </div>
+                                
                                 <p class="title">Daily Mix 1</p>
                             </div>
                         </div>
                     </section>
+                    <!-- pop artist (third row covers) -->
                     <section class="popular-artists">
                         <h2>Artisti più popolari</h2>
                         <p class="subtitle">Più ascolti, più saranno accurati i suggerimenti.</p>
                         <div class="popular-artists-container">
+                            <!-- artist card -->
                             <div class="card text-align-center">
                                 <img class="circle-img" src="./img/youg.jpeg" alt="song cover">
                                 <p class="title">Lana del Rey</p>
                             </div>
+                            <!-- artist card -->
                             <div class="card text-align-center">
                                 <img class="circle-img" src="./img/einaudi.jpeg" alt="song cover">
                                 <p class="title">Ludovico Einaudi</p>
@@ -170,6 +210,7 @@
             </div>
             <!-- footer's central section -->
             <div class="footer-col footer-col-central">
+                <!-- icons controls -->
                 <div class="player-controls">
                     <i class="fa-solid fa-shuffle player-control-icon"></i>
                     <i class="fa-solid fa-backward-step player-control-icon"></i>
@@ -177,6 +218,7 @@
                     <i class="fa-solid fa-forward-step player-control-icon"></i>
                     <i class="fa-solid fa-arrow-rotate-right player-control-icon"></i>
                 </div>
+                <!-- time bar -->
                 <div class="range-bar-container">
                     <span>0:25</span>
                     <div class="track-range-bar range-bar">
@@ -190,6 +232,7 @@
                 <i class="fa-solid fa-list-ul setting-icon"></i>
                 <i class="fa-solid fa-display setting-icon"></i>
                 <i class="fa-solid fa-volume-high setting-icon"></i>
+                <!-- volume bar -->
                 <div class="volume-range-bar range-bar">
                     <div class="filler-range-bar"></div>
                 </div>
